@@ -1,3 +1,4 @@
+/*animation*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -8,6 +9,7 @@
   }
 }
 
+/*main*/
 html {
   background-color: #612B25;
   position: relative;
@@ -19,14 +21,6 @@ h1 {
   animation: fadeIn 1s;
 }
 
-h1, button {
-  Font-Family: 'Ubuntu', Sans-Serif;
-}
-
-span {
-  Font-Family: 'Open Sans', Sans-Serif;
-}
-
 header span {
   color: lightgrey;
   background-color: rgba(0, 0, 0, 0.7);
@@ -35,6 +29,44 @@ header span {
   border: 1px solid lightgrey;
 }
 
+#results {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  height: 50%;
+  border: 2px solid black;
+  overflow: scroll;
+  animation: fadeIn 1s;
+}
+
+footer {
+  color: #EEA9A2;
+  border-top: 1px solid lightgrey;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0.5%;
+  animation: fadeIn 1s;
+}
+
+#foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem;
+}
+
+/*fonts*/
+h1, button {
+  Font-Family: 'Ubuntu', Sans-Serif;
+}
+
+span {
+  Font-Family: 'Open Sans', Sans-Serif;
+}
+
+/*buttons*/
 #buttons {
   text-align: center;
   animation: fadeIn 1s;
@@ -72,34 +104,7 @@ button:active {
   color: lightgrey;
 }
 
-#results {
-  text-align: center;
-  margin: 0 auto;
-  width: 75%;
-  height: 50%;
-  border: 2px solid black;
-  overflow: scroll;
-  animation: fadeIn 1s;
-}
-
-footer {
-  color: #EEA9A2;
-  border-top: 1px solid lightgrey;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  border-radius: 0.5%;
-  animation: fadeIn 1s;
-}
-
-#foot {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.1rem;
-}
-
+/*links*/
 #git {
   color: #EEA9A2;
 }
@@ -112,8 +117,8 @@ footer {
   color: #EEA9A2;
 }
 
+/*media queries*/
 @media only screen and (max-width: 770px) {
-
   #results {
     width: 90%;
   }
@@ -121,5 +126,4 @@ footer {
   #buttons {
     margin-bottom: 3rem;
   }
-
 }
