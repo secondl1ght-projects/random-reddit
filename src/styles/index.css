@@ -1,0 +1,29 @@
+html {
+  background-color: #612B25;
+}
+
+h1 {
+  text-align: center;
+}
+
+header span {
+  color: lightgrey;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2%;
+  padding: 1%;
+  border: 1px solid lightgrey;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#buttons button {
+  background-color: darkgrey;
+  padding: 1%;
+  color: black;
+}
+
+#results {
+  margin: 30%;
+}
