@@ -19,6 +19,14 @@ h1 {
   animation: fadeIn 1s;
 }
 
+h1, button {
+  Font-Family: 'Ubuntu', Sans-Serif;
+}
+
+span {
+  Font-Family: 'Open Sans', Sans-Serif;
+}
+
 header span {
   color: lightgrey;
   background-color: rgba(0, 0, 0, 0.7);
@@ -30,7 +38,7 @@ header span {
 #buttons {
   text-align: center;
   animation: fadeIn 1s;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 button {
@@ -89,7 +97,7 @@ footer {
 #foot {
   display: flex;
   justify-content: space-between;
-  padding: 0.4rem;
+  padding: 0.1rem;
 }
 
 #git {
@@ -105,6 +113,13 @@ footer {
 }
 
 @media only screen and (max-width: 770px) {
+
   #results {
     width: 90%;
   }
+
+  #buttons {
+    margin-bottom: 3rem;
+  }
+
+}
