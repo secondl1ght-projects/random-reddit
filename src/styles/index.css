@@ -18,10 +18,29 @@ header span {
   text-align: center;
 }
 
-#buttons button {
+button {
   background-color: darkgrey;
   padding: 1%;
   color: black;
+  font-weight: bold;
+  margin: 1%;
+  width: 7rem;
+  border: 2px solid black;
+  border-radius: 3%;
+  height: 3.5rem;
+  transition: box-shadow 0.2s ease-out;
+}
+
+button:hover {
+  box-shadow: 10px 10px black;
+}
+
+button:active {
+  color: whitesmoke;
+}
+
+#highlight {
+  color: lightgrey;
 }
 
 #results {
