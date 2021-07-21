@@ -29,16 +29,6 @@ header span {
   border: 1px solid lightgrey;
 }
 
-#results {
-  text-align: center;
-  margin: 0 auto;
-  width: 75%;
-  height: 50%;
-  border: 2px solid black;
-  overflow: scroll;
-  animation: fadeIn 1s;
-}
-
 footer {
   color: #EEA9A2;
   border-top: 1px solid lightgrey;
@@ -57,6 +47,37 @@ footer {
   padding: 0.1rem 0.2rem 0.1rem 0.2rem;
 }
 
+.box {
+  background-color: lightgrey;
+  max-width: 65%;
+  overflow: scroll;
+  margin: 0 auto;
+  max-height: 60vh;
+  border: 2px solid black;
+  animation: fadeIn 0.1s;
+}
+
+#landing {
+  margin-bottom: 21.5vh;
+  text-align: center;
+}
+
+#landing i {
+  margin-top: 7%;
+  font-size: 10rem;
+}
+
+/* old results div
+#results {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  height: 50%;
+  border: 2px solid black;
+  overflow: scroll;
+  animation: fadeIn 1s;
+} */
+
 /*fonts*/
 h1, button {
   Font-Family: 'Ubuntu', Sans-Serif;
@@ -64,6 +85,19 @@ h1, button {
 
 span {
   Font-Family: 'Open Sans', Sans-Serif;
+}
+
+/*links*/
+#git {
+  color: #EEA9A2;
+}
+
+#git:hover {
+  color: darkgrey;
+}
+
+#git:active {
+  color: #EEA9A2;
 }
 
 /*buttons*/
@@ -104,24 +138,11 @@ button:active {
   color: lightgrey;
 }
 
-/*links*/
-#git {
-  color: #EEA9A2;
-}
-
-#git:hover {
-  color: darkgrey;
-}
-
-#git:active {
-  color: #EEA9A2;
-}
-
 /*media queries*/
 @media only screen and (max-width: 770px) {
-  #results {
+/*  #results {
     width: 90%;
-  }
+  } */
 
   #buttons {
     margin-bottom: 3rem;

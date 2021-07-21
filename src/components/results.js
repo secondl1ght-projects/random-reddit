@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Subreddit from './subreddit';
 import Post from './post';
-import {subredditButton} from '../index.js';
+import '../styles/index.css';
 
-export function Results() {
-  const [view, setView] = useState('');
-  subredditButton.onclick = setView('sub');
+export default function Results({view, results}) {
+  //const [view, setView] = useState('');
+  //subredditButton.onclick = setView('sub');
   if (view === 'sub') {
-    return <Subreddit/>;
+  return <Subreddit subreddit={results}/>;
   }
   else if (view === 'post') {
     return <Post/>
   }
   else {
-    return <div></div>
+    return <div id='landing'><i class="fab fa-reddit-alien"></i></div>
   }
 }

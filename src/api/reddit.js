@@ -1,24 +1,24 @@
 //random subreddit API request
-import Subreddit from '../components/subreddit';
 
-export function getRandomSubreddit() {
+export async function getRandomSubreddit() {
+  return new Promise(async (resolve, reject) => {
+    const xhr = new XMLHttpRequest();
 
-  const xhr = new XMLHttpRequest();
+    const url = "https://www.reddit.com/r/reactjs.json";
 
-  const url = "https://www.reddit.com/r/reactjs.json";
+    xhr.responseType = "json";
 
-  xhr.responseType = "json";
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        resolve(xhr.response);
 
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      Subreddit(xhr.response);
-      
-    } else {
-      return "Trouble reaching the Reddit API.";
-    }
-  };
+      } else {
+        return "Trouble reaching the Reddit API.";
+      }
+    };
 
-  xhr.open("GET", url);
+    xhr.open("GET", url);
 
-  xhr.send();
-}
+    xhr.send();
+  })
+};
