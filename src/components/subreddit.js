@@ -3,6 +3,6 @@ import '../index.js';
 
 export default function Subreddit(response) {
 
-      let randomSubreddit = JSON.parse(response);
+      let randomSubreddit = response;
       return (<div>{randomSubreddit}</div>);
     };
