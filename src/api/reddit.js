@@ -19,7 +19,6 @@ export function getRandomSubreddit() {
   };
 
   xhr.open("GET", url);
-  xhr.setRequestHeader('Access-Control-Allow-Origin');
 
   xhr.send();
 }
