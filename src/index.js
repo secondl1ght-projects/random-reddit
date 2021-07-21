@@ -1,5 +1,5 @@
 import './styles/index.css';
-import './api/reddit';
+import {getRandomSubreddit} from './api/reddit';
 
-export const subredditButton = document.querySelector(#subreddit);
+export const subredditButton = document.querySelector('#subreddit');
 subredditButton.onclick = getRandomSubreddit();

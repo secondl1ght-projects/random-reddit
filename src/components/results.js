@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Subreddit from './subreddit';
 import Post from './post';
-import subredditButton from '../index.js';
+import {subredditButton} from '../index.js';
 
 export function Results() {
   const [view, setView] = useState('');

@@ -1,9 +1,8 @@
 import React from 'react';
-import '../api/reddit';
 import '../index.js';
 
-export function Subreddit() {
-  return (
-    //html goes here to call api return objects
-  )
-};
+export default function Subreddit(response) {
+
+      let randomSubreddit = JSON.parse(response);
+      return (<div>{randomSubreddit}</div>);
+    };

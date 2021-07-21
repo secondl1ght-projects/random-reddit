@@ -1,10 +1,8 @@
 //random subreddit API request
+import Subreddit from '../components/subreddit';
+
 export function getRandomSubreddit() {
 
-  function renderRawResponse(response) {
-    let randomSubreddit = JSON.parse(response);
-    return randomSubreddit;
-  };
 
   const xhr = new XMLHttpRequest();
 
@@ -14,13 +12,14 @@ export function getRandomSubreddit() {
 
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
-      renderRawResponse(xhr.response);
+      Subreddit(xhr.response);
     } else {
       return "Trouble reaching the Reddit API.";
     }
   };
 
   xhr.open("GET", url);
+  xhr.setRequestHeader('Access-Control-Allow-Origin');
 
   xhr.send();
 }
