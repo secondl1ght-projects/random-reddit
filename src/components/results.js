@@ -1,18 +1,20 @@
 //component for showing either Subreddit or Post
 
-import React from 'react';
-import Subreddit from './subreddit';
-import Post from './post';
-import '../styles/index.css';
+import React from "react";
+import Subreddit from "./subreddit";
+import Post from "./post";
+import "../styles/index.css";
 
-export default function Results({view, results}) {
-  if (view === 'sub') {
-  return <Subreddit subreddit={results}/>;
+export default function Results({ view, results, loading }) {
+  if (view === "sub") {
+    return <Subreddit subreddit={results} loading={loading} />;
+  } else if (view === "post") {
+    return <Post post={results} loading={loading} />;
+  } else {
+    return (
+      <div id="landing">
+        <i className="fab fa-reddit-alien"></i>
+      </div>
+    );
   }
-  else if (view === 'post') {
-    return <Post post={results}/>
-  }
-  else {
-    return <div id='landing'><i className="fab fa-reddit-alien"></i></div>
-  }
-};
+}

@@ -21,8 +21,12 @@ h1 {
   animation: fadeIn 1s;
 }
 
-h2 {
+h2, p {
   animation: fadeIn 1s;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 header span {
@@ -58,9 +62,19 @@ footer {
   height: 60vh;
   border: 3px solid black;
   animation: fadeIn 0.1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  overflow: scroll;
+}
+
+.box i {
+  margin-left: 1%;
+}
+
+#postcontent {
+  border: 1px dashed black;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: background-color 0.5s ease-out;
 }
 
 #landing {
@@ -74,13 +88,25 @@ footer {
   animation: fadeIn 1s;
 }
 
+#mainsub {
+  margin-top: 15%;
+}
+
+#loading {
+  margin-top: 15%;
+}
+
 /*fonts*/
 h1, button, h2 {
   font-family: 'Ubuntu', Sans-Serif;
 }
 
-span {
+span, p {
   font-family: 'Open Sans', Sans-Serif;
+}
+
+aside {
+  font-size: 0.7rem;
 }
 
 /*links*/
@@ -109,6 +135,22 @@ span {
 
 .box a:active {
   text-shadow: 1px 1px whitesmoke;
+}
+
+#subr a, #author a, #postcontent a {
+  text-decoration: none;
+}
+
+#author a, #subr a {
+  font-weight: bold;
+}
+
+#postcontent:hover {
+  background-color: #612B25;
+}
+
+#postcontent a:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*buttons*/
