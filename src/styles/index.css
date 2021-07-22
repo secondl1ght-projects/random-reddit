@@ -80,11 +80,11 @@ footer {
 
 /*fonts*/
 h1, button {
-  Font-Family: 'Ubuntu', Sans-Serif;
+  font-family: 'Ubuntu', Sans-Serif;
 }
 
 span {
-  Font-Family: 'Open Sans', Sans-Serif;
+  font-family: 'Open Sans', Sans-Serif;
 }
 
 /*links*/
