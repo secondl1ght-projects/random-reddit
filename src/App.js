@@ -43,12 +43,16 @@ function App() {
           Post
         </button>
         <br />
-        <br />
         <span>
           Select a button to return a random{" "}
           <span id="highlight">subreddit</span> or{" "}
-          <span id="highlight">post</span>.<br />
-          <aside>*This is completely random so some content may be NSFW.</aside>
+          <span id="highlight">post</span>.
+          <aside>
+            You can click on subreddits, posts and users to view on Reddit in a
+            new window.
+            <br />
+            *This is completely random so some content may be NSFW.
+          </aside>
         </span>
       </div>
     </>
