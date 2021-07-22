@@ -176,6 +176,10 @@ button {
   transition: box-shadow 0.2s ease-out;
 }
 
+header a {
+  text-decoration: none;
+}
+
 button:hover {
   box-shadow: 10px 10px black;
 }
@@ -210,6 +214,6 @@ button:active {
   }
 
   h2, #mainsub {
-  margin-top: 50%;
+    margin-top: 50%;
   }
 }
