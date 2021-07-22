@@ -196,7 +196,7 @@ button:active {
 @media only screen and (max-width: 770px) {
   .box {
     width: 90%;
-    height: 50vh;
+    height: 55vh;
   }
 
   #buttons {
@@ -211,5 +211,9 @@ button:active {
   button {
     margin-left: 2%;
     margin-right: 2%;
+  }
+
+  h2, #loading {
+  margin-top: 40%;
   }
 }
