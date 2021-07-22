@@ -6,8 +6,6 @@ import Post from './post';
 import '../styles/index.css';
 
 export default function Results({view, results}) {
-  //const [view, setView] = useState('');
-  //subredditButton.onclick = setView('sub');
   if (view === 'sub') {
   return <Subreddit subreddit={results}/>;
   }

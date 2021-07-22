@@ -48,7 +48,7 @@ This project is in active development as I work to get all the features function
 - Fonts by Google Fonts
 - Icons by (<https://www.fontawesome.com>)
 - Coded using Atom text editor
-- Special thanks to https://github.com/alejandro for reviewing my code and helping me refactor parts of it
+- Special thanks to https://github.com/alejandro for reviewing my code and helping me refactor parts of it, also helping with debugging and overall being awesome! 
 
 ## Contact
 If you would like to contact me please send me a message on Discord @secondl1ght#9164 or by e-mail at secondl1ght@protonmail.com, I would love to hear from you!

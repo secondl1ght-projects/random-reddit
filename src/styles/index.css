@@ -21,6 +21,11 @@ h1 {
   animation: fadeIn 1s;
 }
 
+h2 {
+  text-align: center;
+  animation: fadeIn 0.1s;
+}
+
 header span {
   color: lightgrey;
   background-color: rgba(0, 0, 0, 0.7);
@@ -79,7 +84,7 @@ footer {
 } */
 
 /*fonts*/
-h1, button {
+h1, button, h2 {
   font-family: 'Ubuntu', Sans-Serif;
 }
 
