@@ -24,6 +24,7 @@ h1 {
 h2 {
   text-align: center;
   animation: fadeIn 0.1s;
+  margin: 20%;
 }
 
 header span {
@@ -53,12 +54,11 @@ footer {
 }
 
 .box {
-  background-color: lightgrey;
-  max-width: 65%;
-  overflow: scroll;
+  background-color: rgba(211,211,211, 0.3);
+  width: 65%;
   margin: 0 auto;
-  max-height: 60vh;
-  border: 2px solid black;
+  height: 60vh;
+  border: 3px solid black;
   animation: fadeIn 0.1s;
 }
 
@@ -135,7 +135,7 @@ button:active {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   .box {
-    max-width: 90%;
+    width: 90%;
   }
 
   #buttons {
@@ -145,5 +145,9 @@ button:active {
   #landing i {
     margin-top: 25%;
     font-size: 10rem;
+  }
+
+  h2 {
+    margin-top: 38%;
   }
 }
