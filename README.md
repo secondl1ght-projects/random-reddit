@@ -38,6 +38,9 @@ Project is: _in progress_
 
 This project is in active development as I work to get all the features functional.
 
+## Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a324bc96-cdfc-4fec-8df4-c1746414876e/deploy-status)](https://app.netlify.com/sites/eager-booth-2fc374/deploys)
+
 ## Room for Improvement
 - Display more information from each response
 
