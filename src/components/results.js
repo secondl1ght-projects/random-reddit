@@ -12,9 +12,9 @@ export default function Results({view, results}) {
   return <Subreddit subreddit={results}/>;
   }
   else if (view === 'post') {
-    return <Post/>
+    return <Post post={results}/>
   }
   else {
-    return <div id='landing'><i class="fab fa-reddit-alien"></i></div>
+    return <div id='landing'><i className="fab fa-reddit-alien"></i></div>
   }
 };
