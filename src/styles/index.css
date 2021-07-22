@@ -72,17 +72,6 @@ footer {
   font-size: 10rem;
 }
 
-/* old results div
-#results {
-  text-align: center;
-  margin: 0 auto;
-  width: 75%;
-  height: 50%;
-  border: 2px solid black;
-  overflow: scroll;
-  animation: fadeIn 1s;
-} */
-
 /*fonts*/
 h1, button, h2 {
   font-family: 'Ubuntu', Sans-Serif;
@@ -151,5 +140,10 @@ button:active {
 
   #buttons {
     margin-bottom: 3rem;
+  }
+
+  #landing i {
+    margin-top: 10%;
+    font-size: 10rem;
   }
 }
