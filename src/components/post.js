@@ -46,10 +46,10 @@ export default function Post({ post, loading }) {
               {postData[0].data.children[0].data.downs}{" "}
               <i className="fas fa-percentage"></i>{" "}
               {postData[0].data.children[0].data.upvote_ratio}
-              <i className="fas fa-comment"></i>{" "}
-              {postData[0].data.children[0].data.num_comments}{" "}
               <i className="fas fa-trophy"></i>{" "}
               {postData[0].data.children[0].data.total_awards_received}{" "}
+              <i className="fas fa-comment"></i>{" "}
+              {postData[0].data.children[0].data.num_comments}{" "}
             </div>
             <br />
             <span id="author">
