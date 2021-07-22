@@ -1,3 +1,5 @@
+//component for showing either Subreddit or Post
+
 import React from 'react';
 import Subreddit from './subreddit';
 import Post from './post';
@@ -15,4 +17,4 @@ export default function Results({view, results}) {
   else {
     return <div id='landing'><i class="fab fa-reddit-alien"></i></div>
   }
-}
+};

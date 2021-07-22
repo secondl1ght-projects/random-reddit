@@ -140,9 +140,9 @@ button:active {
 
 /*media queries*/
 @media only screen and (max-width: 770px) {
-/*  #results {
-    width: 90%;
-  } */
+  .box {
+    max-width: 90%;
+  }
 
   #buttons {
     margin-bottom: 3rem;

@@ -4,7 +4,7 @@ export async function getRandomSubreddit() {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = "https://www.reddit.com/r/reactjs.json";
+    const url = "https://www.reddit.com/random.json";
 
     xhr.responseType = "json";
 
