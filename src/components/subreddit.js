@@ -27,7 +27,7 @@ export default function Subreddit({ subreddit, loading }) {
       return (
         <div className="box">
           <h2 id="mainsub">
-            <a href={subURL} target="_blank">
+            <a href={subURL} target="_blank" rel='noreferrer'>
               {subredditData[0].data.children[0].data.subreddit_name_prefixed}
             </a>
           </h2>

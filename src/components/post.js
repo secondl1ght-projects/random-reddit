@@ -26,14 +26,14 @@ export default function Post({ post, loading }) {
         <div className="box">
           <p>
             <span id="subr">
-              <a href={subURL} target="_blank">
+              <a href={subURL} target="_blank" rel='noreferrer'>
                 {postData[0].data.children[0].data.subreddit_name_prefixed}
               </a>
             </span>
             <br />
             <br />
             <div id="postcontent">
-              <a href={postURL} target="_blank">
+              <a href={postURL} target="_blank" rel='noreferrer'>
                 <h3>{postData[0].data.children[0].data.title}</h3>
                 {postData[0].data.children[0].data.selftext}
               </a>
@@ -53,7 +53,7 @@ export default function Post({ post, loading }) {
             <br />
             <span id="author">
               <i className="fas fa-user-edit"></i> -{" "}
-              <a href={authorURL} target="_blank">
+              <a href={authorURL} target="_blank" rel='noreferrer'>
                 {postData[0].data.children[0].data.author}
               </a>
             </span>
