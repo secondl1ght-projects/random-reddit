@@ -1,3 +1,5 @@
+export
+
 /*animation*/
 @keyframes fadeIn {
   0% {
@@ -215,5 +217,9 @@ button:active {
 
   h2, #mainsub {
     margin-top: 50%;
+  }
+
+  html {
+    max-height: 100vh;
   }
 }
