@@ -194,7 +194,7 @@ button:active {
 @media only screen and (max-width: 770px) {
   .box {
     width: 90%;
-    height: 55vh;
+    height: 56vh;
   }
 
   #buttons {
@@ -202,7 +202,7 @@ button:active {
   }
 
   #landing i {
-    margin-top: 25%;
+    margin-top: 30%;
     font-size: 10rem;
   }
 
@@ -212,6 +212,6 @@ button:active {
   }
 
   h2, #mainsub {
-    margin-top: 5%;
+    margin-top: 50%;
   }
 }
