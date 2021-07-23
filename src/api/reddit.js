@@ -57,7 +57,7 @@ export async function getRandomPost() {
 
     xhr.onreadystatechange = async () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.response[0].data.children[0].data.selftext && xhr.response[0].data.children[0].data.subreddit !== ['CryptoMarsShots', 'CryptoMoon']) {
+        if (xhr.response[0].data.children[0].data.selftext && xhr.response[0].data.children[0].data.subreddit !== ['CryptoMarsShots', 'CryptoMoon', 'CryptoMars']) {
           resolve(xhr.response);
         } else {
           const post = await getRandomPost();

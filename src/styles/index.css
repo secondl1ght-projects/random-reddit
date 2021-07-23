@@ -21,10 +21,6 @@ h1 {
   animation: fadeIn 1s;
 }
 
-h2, p {
-  animation: fadeIn 1s;
-}
-
 h3 {
   margin-top: 0;
 }
@@ -87,8 +83,12 @@ footer {
   text-align: center;
 }
 
-#author, #subr, #mainsub a, #poststats, #postcontent {
+#author, #subr, #mainsub a, #poststats, #postcontent, h2, p {
   animation: fadeIn 1s;
+}
+
+#subr {
+  margin-top: 1rem;
 }
 
 #landing i {

@@ -47,8 +47,9 @@ export default function Subreddit({ subreddit, loading }) {
               {subredditData.data.public_description}
               <br />
               <br />
-              <i className="fas fa-users"></i> {new Intl.NumberFormat().format(subredditData.data.subscribers)}{" "}
-              <i className="fas fa-user-check"></i>{" "}
+              <i className="fas fa-users"></i>{" "}
+              {new Intl.NumberFormat().format(subredditData.data.subscribers)}{" "}
+              <i class="fas fa-user-clock"></i>{" "}
               {new Intl.NumberFormat().format(subredditData.data.accounts_active)}
             </p>
           </div>
