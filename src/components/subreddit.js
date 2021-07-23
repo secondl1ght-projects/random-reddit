@@ -49,7 +49,7 @@ export default function Subreddit({ subreddit, loading }) {
               <br />
               <i className="fas fa-users"></i>{" "}
               {new Intl.NumberFormat().format(subredditData.data.subscribers)}{" "}
-              <i class="fas fa-user-clock"></i>{" "}
+              <i className="fas fa-user-clock"></i>{" "}
               {new Intl.NumberFormat().format(subredditData.data.accounts_active)}
             </p>
           </div>

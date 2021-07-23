@@ -57,9 +57,9 @@ footer {
   margin: 0 auto;
   height: 60vh;
   border: 3px solid black;
-  animation: fadeIn 0.1s;
   text-align: center;
   overflow: scroll;
+  animation: fadeIn 0.1s;
 }
 
 .box i {
@@ -83,7 +83,7 @@ footer {
   text-align: center;
 }
 
-#author, #subr, #mainsub a, #poststats, #postcontent, h2, p {
+#author, #subr, #mainsub a, #poststats, #postcontent, p {
   animation: fadeIn 1s;
 }
 
@@ -99,7 +99,6 @@ footer {
 
 #loading {
   margin-top: 15%;
-  animation: fadeIn 1s;
 }
 
 /*fonts*/
