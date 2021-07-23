@@ -202,7 +202,7 @@ button:active {
   }
 
   #landing i {
-    margin-top: 35%;
+    margin-top: 30%;
     font-size: 10rem;
   }
 
@@ -211,7 +211,11 @@ button:active {
     margin-right: 3%;
   }
 
-  #subcontent, #loading {
+  #loading {
     margin-top: 50%;
+  }
+
+  #subcontent {
+    margin-top: 25%;
   }
 }
