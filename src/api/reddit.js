@@ -55,12 +55,13 @@ export async function getRandomPost() {
 
     xhr.responseType = "json";
 
-    xhr.onreadystatechange = () => {
+    xhr.onreadystatechange = async () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.response[0].data.children[0].data.selftext && xhr.response[0].data.children[0].data.subreddit !== ['CryptoMarsShots', 'CryptoMoon']) {
           resolve(xhr.response);
         } else {
-          return document.querySelector("#post").click();
+          const post = await getRandomPost();
+          return resolve(post);
         }
       } else {
         return "Trouble reaching the Reddit API.";

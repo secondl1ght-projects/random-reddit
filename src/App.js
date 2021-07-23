@@ -10,7 +10,7 @@ import { getSubredditInfo } from "./api/reddit";
 function App() {
   const [results, setResults] = React.useState([]);
   const [view, setView] = React.useState("");
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = React.useState(false);
   const handleOnClickSub = async (ev) => {
     ev.preventDefault();
     setLoading(true);
@@ -39,10 +39,17 @@ function App() {
           type="button"
           name="subreddit"
           onClick={handleOnClickSub}
+          disabled={loading ? true : false}
         >
           Subreddit
         </button>
-        <button id="post" type="button" name="post" onClick={handleOnClickPost}>
+        <button
+          id="post"
+          type="button"
+          name="post"
+          onClick={handleOnClickPost}
+          disabled={loading ? true : false}
+        >
           Post
         </button>
         <br />

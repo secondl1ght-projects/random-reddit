@@ -99,6 +99,7 @@ footer {
 
 #loading {
   margin-top: 15%;
+  animation: fadeIn 1s;
 }
 
 /*fonts*/
