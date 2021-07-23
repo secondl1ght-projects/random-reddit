@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import Results from "./components/results";
 import { getRandomSubreddit } from "./api/reddit";
 import { getRandomPost } from "./api/reddit";
-
+import { getSubredditInfo } from "./api/reddit";
 function App() {
   const [results, setResults] = React.useState([]);
   const [view, setView] = React.useState("");
@@ -15,8 +15,11 @@ function App() {
     ev.preventDefault();
     setLoading(true);
     setView("sub");
-    const res = await getRandomSubreddit();
-    setResults(res);
+    const res0 = await getRandomSubreddit();
+    const res1 = await getSubredditInfo(
+      res0[0].data.children[0].data.subreddit
+    );
+    setResults(res1);
     setLoading(false);
   };
   const handleOnClickPost = async (ev) => {

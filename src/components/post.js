@@ -34,10 +34,16 @@ export default function Post({ post, loading }) {
             <br />
             <br />
             <div id="postcontent">
-              <a href={postURL} target="_blank" rel="noreferrer">
-                <h3>{postData[0].data.children[0].data.title}</h3>
+              <h3>
+                <span id="posttitle">
+                  <a href={postURL} target="_blank" rel="noreferrer">
+                    {postData[0].data.children[0].data.title}
+                  </a>
+                </span>
+              </h3>
+              <span id="selftext">
                 {postData[0].data.children[0].data.selftext}
-              </a>
+              </span>
               <br />
               <br />
               <i className="fas fa-arrow-up"></i>{" "}

@@ -5,32 +5,53 @@ import "../styles/index.css";
 //import { getSubredditInfo } from "../api/reddit";
 
 export default function Subreddit({ subreddit, loading }) {
+  const subredditData = subreddit;
+  //const [subInfo, setSubInfo] = React.useState({});
+
+  //React.useEffect(() => {
+  //if (!subreddit || subreddit.length <=0) return;
+  //async function getInfo() {
+  //const subredditInfo = await getSubredditInfo(
+  //  subredditData[0].data.children[0].data.subreddit
+  //  );
+  //setSubInfo(subredditInfo);
+  //}
+  //getInfo();
+  //}, [subreddit, subredditData]);
+
   if (loading === true) {
     return (
       <div className="box">
         <div id="loading">
           <h2>
-            Loading data<i className="fa fa-spinner fa-spin" />
+            Loading data
+            <i className="fa fa-spinner fa-spin" />
           </h2>
         </div>
       </div>
     );
   } else {
-    //  let randomSubreddit = JSON.stringify(subreddit, null, 2);
-    //  console.log(randomSubreddit);
-    const subredditData = subreddit;
-    //const subredditInfo = await getSubredditInfo(subredditData[0].data.children[0].data.subreddit);
-    //const subredditInfoDisplay = JSON.stringify(subredditInfo, null, 2);
-    ///console.log(subredditInfoDisplay);
-    const subURL = `https://www.reddit.com/r/${subredditData[0].data.children[0].data.subreddit}`;
+    //const subredditInfoDisplay = JSON.stringify(subredditData, null, 2);
+    //console.log(subredditInfoDisplay);
+    const subURL = `https://www.reddit.com/r/${subredditData.data.display_name}`;
     if (subreddit) {
       return (
         <div className="box">
-          <h2 id="mainsub">
-            <a href={subURL} target="_blank" rel='noreferrer'>
-              {subredditData[0].data.children[0].data.subreddit_name_prefixed}
-            </a>
-          </h2>
+          <div id="subcontent">
+            <h2 id="mainsub">
+              <a href={subURL} target="_blank" rel="noreferrer">
+                {subredditData.data.display_name_prefixed}
+              </a>
+            </h2>
+            <p>
+              {subredditData.data.public_description}
+              <br />
+              <br />
+              <i class="fas fa-users"></i> {subredditData.data.subscribers}{" "}
+              <i class="fas fa-user-check"></i>{" "}
+              {subredditData.data.accounts_active}
+            </p>
+          </div>
         </div>
       );
     } else {

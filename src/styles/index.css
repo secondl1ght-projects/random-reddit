@@ -1,5 +1,3 @@
-export
-
 /*animation*/
 @keyframes fadeIn {
   0% {
@@ -72,11 +70,20 @@ footer {
   margin-left: 1%;
 }
 
-#postcontent {
+#postcontent, #subcontent {
   border: 1px dashed black;
   margin-left: 1rem;
   margin-right: 1rem;
   transition: background-color 0.5s ease-out;
+}
+
+#subcontent {
+  animation: fadeIn 1s;
+  margin-top: 7%;
+}
+
+#subcontent h2, a, p {
+  animation: fadeIn 1s;
 }
 
 #landing {
@@ -90,12 +97,9 @@ footer {
   animation: fadeIn 1s;
 }
 
-#mainsub {
-  margin-top: 15%;
-}
-
 #loading {
   margin-top: 15%;
+  animation: fadeIn 0.1s;
 }
 
 /*fonts*/
@@ -127,7 +131,7 @@ aside {
 .box a {
   color: black;
   transition: background-color 0.5s ease-out;
-  border-radius: 5%;
+  border-radius: 1%;
 }
 
 .box a:hover {
@@ -145,14 +149,6 @@ aside {
 
 #author a, #subr a {
   font-weight: bold;
-}
-
-#postcontent:hover {
-  background-color: #612B25;
-}
-
-#postcontent a:hover {
-  background-color: rgba(0, 0, 0, 0);
 }
 
 /*buttons*/
@@ -206,7 +202,7 @@ button:active {
   }
 
   #landing i {
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 10rem;
   }
 
@@ -217,9 +213,5 @@ button:active {
 
   h2, #mainsub {
     margin-top: 50%;
-  }
-
-  html {
-    max-height: 100vh;
   }
 }

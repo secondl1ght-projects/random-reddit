@@ -27,7 +27,7 @@ export async function getSubredditInfo(subname) {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = `https://www.reddit.com/r/${subname}.json`;
+    const url = `https://www.reddit.com/r/${subname}/about.json`;
 
     xhr.responseType = "json";
 
