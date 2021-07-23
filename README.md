@@ -44,7 +44,7 @@ Simply click on a button to receive results back.
 
 Project is: _in progress_
 
-This project is in active development as I work to get all the features functional.
+The web app is live but I will continue to make improvements in the future.
 
 ## Deployment Status
 
