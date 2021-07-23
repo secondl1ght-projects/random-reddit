@@ -196,7 +196,7 @@ button:active {
 @media only screen and (max-width: 770px) {
   .box {
     width: 90%;
-    height: 55vh;
+    height: 50vh;
   }
 
   #buttons {
