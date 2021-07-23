@@ -25,46 +25,57 @@ export default function Post({ post, loading }) {
     if (post) {
       return (
         <div className="box">
-          <p>
-            <span id="subr">
-              <a href={subURL} target="_blank" rel="noreferrer">
-                {postData[0].data.children[0].data.subreddit_name_prefixed}
-              </a>
-            </span>
-            <br />
-            <br />
-            <div id="postcontent">
-              <h3>
-                <span id="posttitle">
-                  <a href={postURL} target="_blank" rel="noreferrer">
-                    {postData[0].data.children[0].data.title}
-                  </a>
-                </span>
-              </h3>
+          <span id="subr">
+            <a href={subURL} target="_blank" rel="noreferrer">
+              {postData[0].data.children[0].data.subreddit_name_prefixed}
+            </a>
+          </span>
+
+          <br />
+          <br />
+          <div id="postcontent">
+            <h3>
+              <span id="posttitle">
+                <a href={postURL} target="_blank" rel="noreferrer">
+                  {postData[0].data.children[0].data.title}
+                </a>
+              </span>
+            </h3>
+            <p>
               <span id="selftext">
                 {postData[0].data.children[0].data.selftext}
               </span>
-              <br />
-              <br />
+            </p>
+            <br />
+            <br />
+            <span id="poststats">
               <i className="fas fa-arrow-up"></i>{" "}
-              {postData[0].data.children[0].data.ups}{" "}
+              {new Intl.NumberFormat().format(
+                postData[0].data.children[0].data.ups
+              )}{" "}
               <i className="fas fa-arrow-down"></i>{" "}
-              {postData[0].data.children[0].data.downs}{" "}
+              {new Intl.NumberFormat().format(
+                postData[0].data.children[0].data.downs
+              )}{" "}
               <i className="fas fa-percentage"></i>{" "}
               {postData[0].data.children[0].data.upvote_ratio}
               <i className="fas fa-trophy"></i>{" "}
-              {postData[0].data.children[0].data.total_awards_received}{" "}
+              {new Intl.NumberFormat().format(
+                postData[0].data.children[0].data.total_awards_received
+              )}{" "}
               <i className="fas fa-comment"></i>{" "}
-              {postData[0].data.children[0].data.num_comments}{" "}
-            </div>
-            <br />
-            <span id="author">
-              <i className="fas fa-user-edit"></i> -{" "}
-              <a href={authorURL} target="_blank" rel="noreferrer">
-                {postData[0].data.children[0].data.author}
-              </a>
+              {new Intl.NumberFormat().format(
+                postData[0].data.children[0].data.num_comments
+              )}{" "}
             </span>
-          </p>
+          </div>
+          <br />
+          <span id="author">
+            <i className="fas fa-user-edit"></i> -{" "}
+            <a href={authorURL} target="_blank" rel="noreferrer">
+              {postData[0].data.children[0].data.author}
+            </a>
+          </span>
         </div>
       );
     } else {
