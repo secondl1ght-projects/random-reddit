@@ -87,8 +87,9 @@ footer {
   animation: fadeIn 1s;
 }
 
-#subr {
-  margin-top: 1rem;
+#fullpost {
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 #landing i {

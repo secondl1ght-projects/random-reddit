@@ -25,6 +25,7 @@ export default function Post({ post, loading }) {
     if (post) {
       return (
         <div className="box">
+          <div id='fullpost'>
           <span id="subr">
             <a href={subURL} target="_blank" rel="noreferrer">
               {postData[0].data.children[0].data.subreddit_name_prefixed}
@@ -70,7 +71,8 @@ export default function Post({ post, loading }) {
               )}{" "}
               </p>
             </span>
-          </div>
+            </div>
+
           <br />
           <span id="author">
             <i className="fas fa-user-edit"></i> -{" "}
@@ -78,6 +80,7 @@ export default function Post({ post, loading }) {
               {postData[0].data.children[0].data.author}
             </a>
           </span>
+          </div>
         </div>
       );
     } else {
