@@ -4,6 +4,7 @@ import React from "react";
 import "../styles/index.css";
 
 export default function Post({ post, loading }) {
+  const postData = post;
   if (loading === true) {
     return (
       <div className="box">
@@ -18,7 +19,6 @@ export default function Post({ post, loading }) {
   } else {
     //let randomPost = JSON.stringify(post, null, 2);
     //console.log(randomPost);
-    const postData = post;
     const postURL = `https://www.reddit.com${postData[0].data.children[0].data.permalink}`;
     const subURL = `https://www.reddit.com/r/${postData[0].data.children[0].data.subreddit}`;
     const authorURL = `https://www.reddit.com/user/${postData[0].data.children[0].data.author}`;
