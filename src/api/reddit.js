@@ -57,7 +57,7 @@ export async function getRandomPost() {
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.response[0].data.children[0].data.selftext) {
+        if (xhr.response[0].data.children[0].data.selftext && xhr.response[0].data.children[0].data.subreddit !== ['CryptoMarsShots', 'CryptoMoon']) {
           resolve(xhr.response);
         } else {
           return document.querySelector("#post").click();

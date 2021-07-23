@@ -82,13 +82,13 @@ footer {
   margin-top: 7%;
 }
 
-#subcontent h2, a, p {
-  animation: fadeIn 1s;
-}
-
 #landing {
   margin-bottom: 21.5vh;
   text-align: center;
+}
+
+#author, #subr, #mainsub a, #poststats, #postcontent {
+  animation: fadeIn 1s;
 }
 
 #landing i {
@@ -99,7 +99,6 @@ footer {
 
 #loading {
   margin-top: 15%;
-  animation: fadeIn 0.1s;
 }
 
 /*fonts*/

@@ -49,6 +49,7 @@ export default function Post({ post, loading }) {
             <br />
             <br />
             <span id="poststats">
+            <p>
               <i className="fas fa-arrow-up"></i>{" "}
               {new Intl.NumberFormat().format(
                 postData[0].data.children[0].data.ups
@@ -67,6 +68,7 @@ export default function Post({ post, loading }) {
               {new Intl.NumberFormat().format(
                 postData[0].data.children[0].data.num_comments
               )}{" "}
+              </p>
             </span>
           </div>
           <br />
