@@ -9,7 +9,7 @@
     },
   ],
   "start_url": "https://www.randomreddit.ninja",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#612B25"
 }
