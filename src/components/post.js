@@ -47,8 +47,6 @@ export default function Post({ post, loading }) {
                 {postData[0].data.children[0].data.selftext}
               </span>
             </p>
-            <br />
-            <br />
             <span id="poststats">
             <p>
               <i className="fas fa-arrow-up"></i>{" "}
