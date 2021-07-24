@@ -1,7 +1,6 @@
 //Post component to render results from API call
 
 import React from "react";
-import "../styles/index.css";
 
 export default function Post({ post, loading }) {
   const postData = post;

@@ -1,6 +1,5 @@
 //main App component
 
-import "./styles/index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import Results from "./components/results";

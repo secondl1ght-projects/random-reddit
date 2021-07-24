@@ -3,7 +3,6 @@
 import React from "react";
 import Subreddit from "./subreddit";
 import Post from "./post";
-import "../styles/index.css";
 
 export default function Results({ view, results, loading }) {
   function handleAlienClick() {
