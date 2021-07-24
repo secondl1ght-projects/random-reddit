@@ -38,6 +38,7 @@ footer {
   border-top: 1px solid lightgrey;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
+  max-height: 5%;
   left: 0;
   bottom: 0;
   position: absolute;
