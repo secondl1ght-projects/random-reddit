@@ -220,11 +220,7 @@ button:active {
   }
 
   #footeranchor {
-    height: 95vh;
-  }
-
-  footer {
-    height: 5vh;
+    height: 100vh;
   }
 }
 

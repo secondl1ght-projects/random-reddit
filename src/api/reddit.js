@@ -57,8 +57,8 @@ export async function getRandomPost() {
       "MarsWallStreet",
       "CryptoMoonCoins",
       "CryptocurrencyICO",
-      'AllCryptoBets',
-      'cryptostreetbets'
+      "AllCryptoBets",
+      "cryptostreetbets",
     ];
     const url = "https://www.reddit.com/random.json";
 

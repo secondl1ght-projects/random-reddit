@@ -28,7 +28,7 @@ export default function Subreddit({ subreddit, loading }) {
       "Here we go!",
       ":D",
       "Thanks for visiting Random Reddit",
-      "Working on your request..."
+      "Working on your request...",
     ];
     const randomMessage = Math.floor(Math.random() * 9);
     return (

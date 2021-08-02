@@ -1,3 +1,3 @@
 //default file for React app
 
-import './App';
+import "./App";

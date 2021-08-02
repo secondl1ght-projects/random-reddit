@@ -1,8 +1,8 @@
 //Post component to render results from API call
 
 import React from "react";
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 
 export default function Post({ post, loading }) {
   const postData = post;
@@ -16,7 +16,7 @@ export default function Post({ post, loading }) {
       "Here we go!",
       ":D",
       "Thanks for visiting Random Reddit",
-      "Working on your request..."
+      "Working on your request...",
     ];
     const randomMessage = Math.floor(Math.random() * 9);
     return (
@@ -55,9 +55,11 @@ export default function Post({ post, loading }) {
                   </a>
                 </span>
               </h3>
-                <span id="selftext">
-                  <ReactMarkdown remarkPlugins={[gfm]}>{postData[0].data.children[0].data.selftext}</ReactMarkdown>
-                </span>
+              <span id="selftext">
+                <ReactMarkdown remarkPlugins={[gfm]}>
+                  {postData[0].data.children[0].data.selftext}
+                </ReactMarkdown>
+              </span>
               <span id="poststats">
                 <p>
                   <i className="fas fa-arrow-up"></i>{" "}
