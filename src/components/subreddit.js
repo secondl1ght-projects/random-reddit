@@ -45,6 +45,7 @@ export default function Subreddit({ subreddit, loading }) {
     //const subredditInfoDisplay = JSON.stringify(subredditData, null, 2);
     //console.log(subredditInfoDisplay);
     const subURL = `https://www.reddit.com/r/${subredditData.data.display_name}`;
+    const subDate = new Date(subredditData.data.created_utc * 1000);
     if (subreddit) {
       return (
         <div className="box">
@@ -63,7 +64,9 @@ export default function Subreddit({ subreddit, loading }) {
               <i className="fas fa-user-clock"></i>{" "}
               {new Intl.NumberFormat().format(
                 subredditData.data.accounts_active
-              )}
+              )}{" "}
+              <i className="fas fa-birthday-cake"></i>{" "}
+              {subDate.toLocaleDateString()}
             </p>
           </div>
         </div>
