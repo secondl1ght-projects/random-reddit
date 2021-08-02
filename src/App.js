@@ -57,10 +57,16 @@ function App() {
           <span id="highlight">subreddit</span> or{" "}
           <span id="highlight">post</span>.
           <aside>
-            You can click on <span id='highlight'>subreddits</span>, <span id='highlight'>posts</span> and <span id='highlight'>users</span> to view on Reddit in a
-            new window.
+            You can click on <span id="highlight">subreddits</span>,{" "}
+            <span id="highlight">posts</span> and{" "}
+            <span id="highlight">users</span> to view on Reddit in a new window.
             <br />
-            <span id='highlight'>*This is completely random so some content may be NSFW.</span>
+            Embedded post links will open in the same window,{" "}
+            <span id="highlight">only click on links you trust</span>.
+            <br />
+            <span id="highlight">
+              *This is completely random so some content may be NSFW.
+            </span>
           </aside>
         </span>
       </div>
