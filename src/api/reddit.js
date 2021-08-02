@@ -50,14 +50,24 @@ export async function getSubredditInfo(subname) {
 export async function getRandomPost() {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
-
+    const spamFilter = [
+      "CryptoMarsShots",
+      "CryptoMoon",
+      "CryptoMars",
+      "MarsWallStreet",
+      "CryptoMoonCoins",
+      "CryptocurrencyICO"
+    ];
     const url = "https://www.reddit.com/random.json";
 
     xhr.responseType = "json";
 
     xhr.onreadystatechange = async () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.response[0].data.children[0].data.selftext && xhr.response[0].data.children[0].data.subreddit !== ['CryptoMarsShots', 'CryptoMoon', 'CryptoMars', 'MarsWallStreet', 'CryptoMoonCoins']) {
+        if (
+          xhr.response[0].data.children[0].data.selftext &&
+          !spamFilter.includes(xhr.response[0].data.children[0].data.subreddit)
+        ) {
           resolve(xhr.response);
         } else {
           const post = await getRandomPost();

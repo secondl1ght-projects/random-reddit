@@ -55,11 +55,9 @@ export default function Post({ post, loading }) {
                   </a>
                 </span>
               </h3>
-              <p>
                 <span id="selftext">
                   <ReactMarkdown remarkPlugins={[gfm]}>{postData[0].data.children[0].data.selftext}</ReactMarkdown>
                 </span>
-              </p>
               <span id="poststats">
                 <p>
                   <i className="fas fa-arrow-up"></i>{" "}
