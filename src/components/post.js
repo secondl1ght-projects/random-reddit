@@ -5,7 +5,17 @@ import React from "react";
 export default function Post({ post, loading }) {
   const postData = post;
   if (loading === true) {
-    const loadingMessages = ['Loading data', 'Blast off!', 'Calling the Reddit servers', 'Just a second...', 'Generating randomness', 'Here we go!', ':)', 'Thanks for visiting!', 'Working on your request...'];
+    const loadingMessages = [
+      "Loading data",
+      "Blast off!",
+      "Calling the Reddit servers",
+      "Just a second...",
+      "Generating randomness",
+      "Here we go!",
+      ":)",
+      "Thanks for visiting!",
+      "Working on your request..."
+    ];
     const randomMessage = Math.floor(Math.random() * 9);
     return (
       <div className="box">
@@ -26,59 +36,59 @@ export default function Post({ post, loading }) {
     if (post) {
       return (
         <div className="box">
-          <div id='fullpost'>
-          <span id="subr">
-            <a href={subURL} target="_blank" rel="noreferrer">
-              {postData[0].data.children[0].data.subreddit_name_prefixed}
-            </a>
-          </span>
-
-          <br />
-          <br />
-          <div id="postcontent">
-            <h3>
-              <span id="posttitle">
-                <a href={postURL} target="_blank" rel="noreferrer">
-                  {postData[0].data.children[0].data.title}
-                </a>
-              </span>
-            </h3>
-            <p>
-              <span id="selftext">
-                {postData[0].data.children[0].data.selftext}
-              </span>
-            </p>
-            <span id="poststats">
-            <p>
-              <i className="fas fa-arrow-up"></i>{" "}
-              {new Intl.NumberFormat().format(
-                postData[0].data.children[0].data.ups
-              )}{" "}
-              <i className="fas fa-arrow-down"></i>{" "}
-              {new Intl.NumberFormat().format(
-                postData[0].data.children[0].data.downs
-              )}{" "}
-              <i className="fas fa-percentage"></i>{" "}
-              {postData[0].data.children[0].data.upvote_ratio}
-              <i className="fas fa-trophy"></i>{" "}
-              {new Intl.NumberFormat().format(
-                postData[0].data.children[0].data.total_awards_received
-              )}{" "}
-              <i className="fas fa-comment"></i>{" "}
-              {new Intl.NumberFormat().format(
-                postData[0].data.children[0].data.num_comments
-              )}{" "}
-              </p>
+          <div id="fullpost">
+            <span id="subr">
+              <a href={subURL} target="_blank" rel="noreferrer">
+                {postData[0].data.children[0].data.subreddit_name_prefixed}
+              </a>
             </span>
+
+            <br />
+            <br />
+            <div id="postcontent">
+              <h3>
+                <span id="posttitle">
+                  <a href={postURL} target="_blank" rel="noreferrer">
+                    {postData[0].data.children[0].data.title}
+                  </a>
+                </span>
+              </h3>
+              <p>
+                <span id="selftext">
+                  {postData[0].data.children[0].data.selftext}
+                </span>
+              </p>
+              <span id="poststats">
+                <p>
+                  <i className="fas fa-arrow-up"></i>{" "}
+                  {new Intl.NumberFormat().format(
+                    postData[0].data.children[0].data.ups
+                  )}{" "}
+                  <i className="fas fa-arrow-down"></i>{" "}
+                  {new Intl.NumberFormat().format(
+                    postData[0].data.children[0].data.downs
+                  )}{" "}
+                  <i className="fas fa-percentage"></i>{" "}
+                  {postData[0].data.children[0].data.upvote_ratio}
+                  <i className="fas fa-trophy"></i>{" "}
+                  {new Intl.NumberFormat().format(
+                    postData[0].data.children[0].data.total_awards_received
+                  )}{" "}
+                  <i className="fas fa-comment"></i>{" "}
+                  {new Intl.NumberFormat().format(
+                    postData[0].data.children[0].data.num_comments
+                  )}{" "}
+                </p>
+              </span>
             </div>
 
-          <br />
-          <span id="author">
-            <i className="fas fa-user-edit"></i> -{" "}
-            <a href={authorURL} target="_blank" rel="noreferrer">
-              {postData[0].data.children[0].data.author}
-            </a>
-          </span>
+            <br />
+            <span id="author">
+              <i className="fas fa-user-edit"></i> -{" "}
+              <a href={authorURL} target="_blank" rel="noreferrer">
+                {postData[0].data.children[0].data.author}
+              </a>
+            </span>
           </div>
         </div>
       );

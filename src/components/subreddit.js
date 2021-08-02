@@ -19,7 +19,17 @@ export default function Subreddit({ subreddit, loading }) {
   //}, [subreddit, subredditData]);
 
   if (loading === true) {
-    const loadingMessages = ['Loading data', 'Blast off!', 'Calling the Reddit servers', 'Just a second...', 'Generating randomness', 'Here we go!', ':)', 'Thanks for visiting!', 'Working on your request...'];
+    const loadingMessages = [
+      "Loading data",
+      "Blast off!",
+      "Calling the Reddit servers",
+      "Just a second...",
+      "Generating randomness",
+      "Here we go!",
+      ":)",
+      "Thanks for visiting!",
+      "Working on your request..."
+    ];
     const randomMessage = Math.floor(Math.random() * 9);
     return (
       <div className="box">
@@ -51,7 +61,9 @@ export default function Subreddit({ subreddit, loading }) {
               <i className="fas fa-users"></i>{" "}
               {new Intl.NumberFormat().format(subredditData.data.subscribers)}{" "}
               <i className="fas fa-user-clock"></i>{" "}
-              {new Intl.NumberFormat().format(subredditData.data.accounts_active)}
+              {new Intl.NumberFormat().format(
+                subredditData.data.accounts_active
+              )}
             </p>
           </div>
         </div>
