@@ -1,4 +1,4 @@
-# Project Name
+# RANDOM REDDIT
 
 This is a straightforward React web app that users can return a random subreddit or post by clicking on buttons.
 
