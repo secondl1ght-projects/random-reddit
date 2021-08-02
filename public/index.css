@@ -218,10 +218,6 @@ button:active {
   #subcontent {
     margin-top: 20%;
   }
-
-  footer {
-    position: sticky;
-  }
 }
 
 @media only screen and (min-height: 1000px) {
