@@ -26,7 +26,7 @@ export default function Subreddit({ subreddit, loading }) {
       "Just a second...",
       "Generating randomness",
       "Here we go!",
-      ":)",
+      ":D",
       "Thanks for visiting Random Reddit",
       "Working on your request..."
     ];

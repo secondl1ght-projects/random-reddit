@@ -2,6 +2,7 @@
 
 import React from "react";
 import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 export default function Post({ post, loading }) {
   const postData = post;
@@ -13,7 +14,7 @@ export default function Post({ post, loading }) {
       "Just a second...",
       "Generating randomness",
       "Here we go!",
-      ":)",
+      ":D",
       "Thanks for visiting Random Reddit",
       "Working on your request..."
     ];
@@ -56,7 +57,7 @@ export default function Post({ post, loading }) {
               </h3>
               <p>
                 <span id="selftext">
-                  <ReactMarkdown>{postData[0].data.children[0].data.selftext}</ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[gfm]}>{postData[0].data.children[0].data.selftext}</ReactMarkdown>
                 </span>
               </p>
               <span id="poststats">
