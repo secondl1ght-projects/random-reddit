@@ -197,10 +197,6 @@ button:active {
     height: 55.5vh;
   }
 
-  #buttons {
-    margin-bottom: 1rem;
-  }
-
   #landing i {
     margin-top: 30%;
     font-size: 10rem;
