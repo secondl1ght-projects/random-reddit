@@ -1,6 +1,7 @@
 //Post component to render results from API call
 
 import React from "react";
+import ReactMarkdown from 'react-markdown';
 
 export default function Post({ post, loading }) {
   const postData = post;
@@ -55,7 +56,7 @@ export default function Post({ post, loading }) {
               </h3>
               <p>
                 <span id="selftext">
-                  {postData[0].data.children[0].data.selftext}
+                  <ReactMarkdown>{postData[0].data.children[0].data.selftext}</ReactMarkdown>
                 </span>
               </p>
               <span id="poststats">
