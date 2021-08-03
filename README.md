@@ -26,6 +26,7 @@ This website was created as my first React web app to practice and to display as
 -   CSS
 -   JavaScript
 -   React
+-   Markdown
 
 ## Features
 
