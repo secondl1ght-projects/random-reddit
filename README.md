@@ -18,7 +18,7 @@ Link to site: <https://www.randomreddit.ninja>
 
 ## General Information
 
-This website was created as my first React web app to practice and to display as part of my portfolio. It is a fun website that users can enjoy if they want a simple interactive experience and help in finding content on Reddit that they may be interested in.
+This website was created as my first React web app to practice and to display as part of my portfolio. It is a fun website that users can enjoy if they want a simple interactive experience and help with finding content on Reddit that they may be interested in.
 
 ## Technologies Used
 
