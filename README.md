@@ -4,6 +4,8 @@ This is a straightforward React web app that users can return a random subreddit
 
 Link to site: <https://www.randomreddit.ninja>
 
+![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Frandomreddit.ninja)
+
 ## Table of Contents
 
 -   [General Info](#general-information)
