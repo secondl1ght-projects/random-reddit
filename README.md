@@ -14,6 +14,7 @@ Link to site: <https://www.randomreddit.ninja>
 -   [Screenshots](#screenshots)
 -   [Usage](#usage)
 -   [Project Status](#project-status)
+-   [Deployment Status](#deployment-status)
 -   [Room for Improvement](#room-for-improvement)
 -   [Acknowledgements](#acknowledgements)
 -   [Contact](#contact)
