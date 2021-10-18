@@ -12,8 +12,6 @@
 /*main*/
 html {
   background-color: #612B25;
-  position: relative;
-  min-height: 100%;
 }
 
 h1 {
@@ -40,9 +38,10 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  position: absolute;
   border-radius: 0.5%;
   animation: fadeIn 1s;
+  position: fixed;
+  margin-top: 5vh;
 }
 
 #foot {
@@ -191,6 +190,17 @@ button:active {
 }
 
 /*media queries*/
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 1rem;;
+  }
+
+  #foot {
+    padding: 0;
+    font-size: 0.7rem;
+  }
+}
+
 @media only screen and (max-width: 770px) {
   .box {
     width: 90%;
@@ -213,10 +223,6 @@ button:active {
 
   #subcontent {
     margin-top: 20%;
-  }
-
-  #footeranchor {
-    height: 100vh;
   }
 }
 
