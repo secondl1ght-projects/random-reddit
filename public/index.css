@@ -102,6 +102,10 @@ footer {
   margin-top: 15%;
 }
 
+#selftext {
+  overflow: auto;
+}
+
 /*fonts*/
 h1, button, h2 {
   font-family: 'Ubuntu', Sans-Serif;
